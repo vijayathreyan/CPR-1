@@ -1,0 +1,267 @@
+{
+  "1.1": {
+    "run_date": "2026-03-09T23:32:16.899749",
+    "params": {
+      "cpr": {
+        "vn_threshold": 0.15,
+        "n_threshold": 0.25
+      },
+      "sl": {
+        "max_sl_pts": 40,
+        "lookback": 6
+      },
+      "targets": {
+        "tp1_r_multiple": 1.2
+      },
+      "tsl": {
+        "buffer_pts": 10,
+        "update_mins": 15
+      },
+      "ema": {
+        "fast": 5,
+        "slow": 20
+      },
+      "session": {
+        "entry_start": "09:35",
+        "entry_cutoff": "13:00",
+        "hard_exit": "14:40",
+        "obs_times": [
+          "09:21",
+          "09:24",
+          "09:27",
+          "09:30"
+        ],
+        "min_obs_above": 2
+      },
+      "lot_size": 50
+    },
+    "summary": {
+      "total_trades": 49,
+      "win_rate": 51.02,
+      "win_full_rate": 51.02,
+      "loss_rate": 48.98,
+      "total_pnl": 76.27,
+      "avg_win": 70.98,
+      "avg_loss": -70.76,
+      "expectancy": 1.56,
+      "profit_factor": 1.04,
+      "max_drawdown": 410.82,
+      "gross_profit": 1774.47,
+      "gross_loss": 1698.2
+    },
+    "backtest_start": "2015-01-02",
+    "backtest_end": "2026-02-27"
+  },
+  "1.2": {
+    "run_date": "2026-03-09T23:32:51.282776",
+    "params": {
+      "cpr": {
+        "vn_threshold": 0.17,
+        "n_threshold": 0.27
+      },
+      "sl": {
+        "max_sl_pts": 40,
+        "lookback": 6
+      },
+      "targets": {
+        "tp1_r_multiple": 1.2
+      },
+      "tsl": {
+        "buffer_pts": 10,
+        "update_mins": 15
+      },
+      "ema": {
+        "fast": 5,
+        "slow": 20
+      },
+      "session": {
+        "entry_start": "09:35",
+        "entry_cutoff": "13:00",
+        "hard_exit": "14:40",
+        "obs_times": [
+          "09:21",
+          "09:24",
+          "09:27",
+          "09:30"
+        ],
+        "min_obs_above": 2
+      },
+      "lot_size": 50
+    },
+    "summary": {
+      "total_trades": 66,
+      "win_rate": 48.48,
+      "win_full_rate": 48.48,
+      "loss_rate": 51.52,
+      "total_pnl": 110.14,
+      "avg_win": 75.6,
+      "avg_loss": -67.92,
+      "expectancy": 1.67,
+      "profit_factor": 1.05,
+      "max_drawdown": 423.5,
+      "gross_profit": 2419.34,
+      "gross_loss": 2309.2
+    },
+    "backtest_start": "2015-01-02",
+    "backtest_end": "2026-02-27"
+  },
+  "1.3": {
+    "run_date": "2026-03-09T23:33:13.061998",
+    "params": {
+      "cpr": {
+        "vn_threshold": 0.13,
+        "n_threshold": 0.23
+      },
+      "sl": {
+        "max_sl_pts": 40,
+        "lookback": 6
+      },
+      "targets": {
+        "tp1_r_multiple": 1.2
+      },
+      "tsl": {
+        "buffer_pts": 10,
+        "update_mins": 15
+      },
+      "ema": {
+        "fast": 5,
+        "slow": 20
+      },
+      "session": {
+        "entry_start": "09:35",
+        "entry_cutoff": "13:00",
+        "hard_exit": "14:40",
+        "obs_times": [
+          "09:21",
+          "09:24",
+          "09:27",
+          "09:30"
+        ],
+        "min_obs_above": 2
+      },
+      "lot_size": 50
+    },
+    "summary": {
+      "total_trades": 36,
+      "win_rate": 44.44,
+      "win_full_rate": 44.44,
+      "loss_rate": 55.56,
+      "total_pnl": -229.18,
+      "avg_win": 71.81,
+      "avg_loss": -68.91,
+      "expectancy": -6.37,
+      "profit_factor": 0.83,
+      "max_drawdown": 437.7,
+      "gross_profit": 1149.02,
+      "gross_loss": 1378.2
+    },
+    "backtest_start": "2015-01-02",
+    "backtest_end": "2026-02-27"
+  },
+  "1.4": {
+    "run_date": "2026-03-09T23:33:58.306544",
+    "params": {
+      "cpr": {
+        "vn_threshold": 0.2,
+        "n_threshold": 0.3
+      },
+      "sl": {
+        "max_sl_pts": 40,
+        "lookback": 6
+      },
+      "targets": {
+        "tp1_r_multiple": 1.2
+      },
+      "tsl": {
+        "buffer_pts": 10,
+        "update_mins": 15
+      },
+      "ema": {
+        "fast": 5,
+        "slow": 20
+      },
+      "session": {
+        "entry_start": "09:35",
+        "entry_cutoff": "13:00",
+        "hard_exit": "14:40",
+        "obs_times": [
+          "09:21",
+          "09:24",
+          "09:27",
+          "09:30"
+        ],
+        "min_obs_above": 2
+      },
+      "lot_size": 50
+    },
+    "summary": {
+      "total_trades": 98,
+      "win_rate": 47.96,
+      "win_full_rate": 47.96,
+      "loss_rate": 52.04,
+      "total_pnl": 120.34,
+      "avg_win": 71.69,
+      "avg_loss": -63.7,
+      "expectancy": 1.23,
+      "profit_factor": 1.04,
+      "max_drawdown": 471.91,
+      "gross_profit": 3369.24,
+      "gross_loss": 3248.9
+    },
+    "backtest_start": "2015-01-02",
+    "backtest_end": "2026-02-27"
+  },
+  "1.5": {
+    "run_date": "2026-03-09T23:34:12.109397",
+    "params": {
+      "cpr": {
+        "vn_threshold": 0.12,
+        "n_threshold": 0.2
+      },
+      "sl": {
+        "max_sl_pts": 40,
+        "lookback": 6
+      },
+      "targets": {
+        "tp1_r_multiple": 1.2
+      },
+      "tsl": {
+        "buffer_pts": 10,
+        "update_mins": 15
+      },
+      "ema": {
+        "fast": 5,
+        "slow": 20
+      },
+      "session": {
+        "entry_start": "09:35",
+        "entry_cutoff": "13:00",
+        "hard_exit": "14:40",
+        "obs_times": [
+          "09:21",
+          "09:24",
+          "09:27",
+          "09:30"
+        ],
+        "min_obs_above": 2
+      },
+      "lot_size": 50
+    },
+    "summary": {
+      "total_trades": 16,
+      "win_rate": 50.0,
+      "win_full_rate": 50.0,
+      "loss_rate": 50.0,
+      "total_pnl": -35.63,
+      "avg_win": 71.33,
+      "avg_loss": -75.79,
+      "expectancy": -2.23,
+      "profit_factor": 0.94,
+      "max_drawdown": 256.88,
+      "gross_profit": 570.67,
+      "gross_loss": 606.3
+    },
+    "backtest_start": "2015-01-02",
+    "backtest_end": "2026-02-27"
+  }
+}

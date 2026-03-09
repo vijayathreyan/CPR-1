@@ -1,0 +1,21 @@
+# Secrets — never commit these
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+dist/
+build/
+venv/
+.venv/
+env/
+
+# VS Code
+.vscode/
+
+# Backtest results (optional — remove these lines if you want to commit results)
+# data/results/*/journal.csv
+# data/results/*/journal.xlsx
+# data/results/comparison.json

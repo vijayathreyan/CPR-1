@@ -1,0 +1,56 @@
+{
+  "version": "1.2",
+  "run_date": "2026-03-09T23:32:51.282776",
+  "data_source": "kite",
+  "backtest_start": "2015-01-02",
+  "backtest_end": "2026-02-27",
+  "total_rows": 2766,
+  "params": {
+    "cpr": {
+      "vn_threshold": 0.17,
+      "n_threshold": 0.27
+    },
+    "sl": {
+      "max_sl_pts": 40,
+      "lookback": 6
+    },
+    "targets": {
+      "tp1_r_multiple": 1.2
+    },
+    "tsl": {
+      "buffer_pts": 10,
+      "update_mins": 15
+    },
+    "ema": {
+      "fast": 5,
+      "slow": 20
+    },
+    "session": {
+      "entry_start": "09:35",
+      "entry_cutoff": "13:00",
+      "hard_exit": "14:40",
+      "obs_times": [
+        "09:21",
+        "09:24",
+        "09:27",
+        "09:30"
+      ],
+      "min_obs_above": 2
+    },
+    "lot_size": 50
+  },
+  "summary": {
+    "total_trades": 66,
+    "win_rate": 48.48,
+    "win_full_rate": 48.48,
+    "loss_rate": 51.52,
+    "total_pnl": 110.14,
+    "avg_win": 75.6,
+    "avg_loss": -67.92,
+    "expectancy": 1.67,
+    "profit_factor": 1.05,
+    "max_drawdown": 423.5,
+    "gross_profit": 2419.34,
+    "gross_loss": 2309.2
+  }
+}
