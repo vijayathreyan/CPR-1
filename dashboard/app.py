@@ -595,37 +595,37 @@ with tab_perf:
         st.markdown('<div class="section-hdr">Equity & Drawdown</div>',
                     unsafe_allow_html=True)
         st.plotly_chart(chart_equity(trades, vc, f"v{version_id}"),
-                        use_container_width=True)
+                        width='stretch')
 
         c1, c2 = st.columns([3, 2])
         with c1:
             st.markdown('<div class="section-hdr">Monthly P&L Heatmap</div>',
                         unsafe_allow_html=True)
-            st.plotly_chart(chart_monthly(trades), use_container_width=True)
+            st.plotly_chart(chart_monthly(trades), width='stretch')
         with c2:
             st.markdown('<div class="section-hdr">Yearly P&L</div>',
                         unsafe_allow_html=True)
-            st.plotly_chart(chart_yearly(trades), use_container_width=True)
+            st.plotly_chart(chart_yearly(trades), width='stretch')
 
         c3, c4 = st.columns(2)
         with c3:
             st.markdown('<div class="section-hdr">Trade Outcomes</div>',
                         unsafe_allow_html=True)
-            st.plotly_chart(chart_donut(trades), use_container_width=True)
+            st.plotly_chart(chart_donut(trades), width='stretch')
         with c4:
             st.markdown('<div class="section-hdr">P&L Distribution</div>',
                         unsafe_allow_html=True)
-            st.plotly_chart(chart_hist(trades), use_container_width=True)
+            st.plotly_chart(chart_hist(trades), width='stretch')
 
         c5, c6 = st.columns(2)
         with c5:
             st.markdown('<div class="section-hdr">Day of Week</div>',
                         unsafe_allow_html=True)
-            st.plotly_chart(chart_dow(trades), use_container_width=True)
+            st.plotly_chart(chart_dow(trades), width='stretch')
         with c6:
             st.markdown('<div class="section-hdr">MFE vs MAE</div>',
                         unsafe_allow_html=True)
-            st.plotly_chart(chart_scatter(trades), use_container_width=True)
+            st.plotly_chart(chart_scatter(trades), width='stretch')
 
 
 # ══════════════════════════════════════════════════════════════════════════════
@@ -659,7 +659,7 @@ with tab_cmp:
             st.markdown('<div class="section-hdr">Equity Curves Overlay</div>',
                         unsafe_allow_html=True)
             st.plotly_chart(chart_overlay_equity(cmp_sel),
-                            use_container_width=True)
+                            width='stretch')
 
             # Head-to-head table
             st.markdown('<div class="section-hdr">Head-to-Head Metrics</div>',
@@ -706,7 +706,7 @@ with tab_cmp:
                 return styles
 
             st.dataframe(cdf.style.apply(hl_best, axis=1),
-                         use_container_width=True, height=420)
+                         width='stretch', height=420)
 
             # Delta vs first version
             ref    = cmp_sel[0]
@@ -750,13 +750,13 @@ with tab_cmp:
             b1, b2, b3 = st.columns(3)
             with b1:
                 st.plotly_chart(chart_bar_metric(cmp_sel,"win_rate","Win Rate %"),
-                                use_container_width=True)
+                                width='stretch')
             with b2:
                 st.plotly_chart(chart_bar_metric(cmp_sel,"expectancy","Expectancy"),
-                                use_container_width=True)
+                                width='stretch')
             with b3:
                 st.plotly_chart(chart_bar_metric(cmp_sel,"total_pnl","Total P&L"),
-                                use_container_width=True)
+                                width='stretch')
 
 
 # ══════════════════════════════════════════════════════════════════════════════
@@ -897,7 +897,7 @@ with tab_info:
             pass
     if prows:
         st.dataframe(pd.DataFrame(prows),
-                     use_container_width=True, hide_index=True)
+                     width='stretch', hide_index=True)
 
 
 # ══════════════════════════════════════════════════════════════════════════════
@@ -951,7 +951,7 @@ with tab_journal:
                   .applymap(cp,  subset=["total_pnl_pts"])
                   .format(fmt,   na_rep="—"))
 
-        st.dataframe(styled, use_container_width=True, height=540)
+        st.dataframe(styled, width='stretch', height=540)
 
         d1, d2, _ = st.columns([1, 1, 5])
         with d1:
